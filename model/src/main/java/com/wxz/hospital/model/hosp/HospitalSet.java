@@ -14,6 +14,7 @@ import lombok.Data;
  *
  * @author qy
  */
+
 @Data
 @ApiModel(description = "医院设置")
 @TableName("hospital_set")

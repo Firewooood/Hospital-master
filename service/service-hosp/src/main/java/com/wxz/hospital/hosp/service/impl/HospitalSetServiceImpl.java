@@ -9,12 +9,13 @@ import org.springframework.stereotype.Service;
 
 /**
  * @Author: WuXiangZhong
- * @Description:
+ * @Description: 默认实现了单边的CURD 以及分页查询
  * @Date: Create in 2022/8/12
  */
 @Service
 public class HospitalSetServiceImpl extends ServiceImpl<HospitalSetMapper, HospitalSet> implements HospitalSetService {
-
+    @Autowired
+    private HospitalSetMapper hospitalSetMapper;
 
 
 }

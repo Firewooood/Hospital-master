@@ -1,13 +1,17 @@
 package com.wxz.hospital.hosp;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @Author: WuXiangZhong
- * @Description:
+ * @Description:  http://localhost:8201/swagger-ui.html 后台测试
  * @Date: Create in 2022/8/12
  */
+
+@ComponentScan(basePackages = "com.wxz")
 @SpringBootApplication
 public class ServiceHospApplication {
     public static void main(String[] args) {
