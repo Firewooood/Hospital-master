@@ -13,8 +13,7 @@ import javax.annotation.Resources;
  * @Date: Create in 2022/8/12
  */
 
-@Repository
-@Mapper
+
 public interface HospitalSetMapper extends BaseMapper<HospitalSet> {
     // 使用mybatis plus 需继承BaseMapper,
 }
