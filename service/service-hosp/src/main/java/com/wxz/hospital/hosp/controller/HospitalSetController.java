@@ -102,7 +102,7 @@ public class HospitalSetController {
     @GetMapping("getHospSet/{id}")
     public Result getHospSet(@PathVariable Long id){
         try {
-            int a = 1/0;
+//            int a = 1/0;
         } catch (Exception e) {
             throw new HospitalException("失败",201);
         }

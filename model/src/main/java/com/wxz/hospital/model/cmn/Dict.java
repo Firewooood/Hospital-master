@@ -62,7 +62,7 @@ public class Dict {
     private String dictCode;
 
     @ApiModelProperty(value = "是否包含子节点")
-    @TableField(exist = false)
+    @TableField(exist = false)      // mysql 表中没有此字段 为了树形目录显示创建
     private boolean hasChildren;
 
 }
