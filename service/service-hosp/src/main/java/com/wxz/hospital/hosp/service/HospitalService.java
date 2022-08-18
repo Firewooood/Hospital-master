@@ -1,0 +1,39 @@
+package com.wxz.hospital.hosp.service;
+
+import com.wxz.hospital.model.hosp.Hospital;
+import com.wxz.hospital.vo.hosp.HospitalQueryVo;
+import org.springframework.data.domain.Page;
+
+import java.util.List;
+import java.util.Map;
+
+/**
+ * @Author: WuXiangZhong
+ * @Description:
+ * @Date: Create in 2022/8/17
+ */
+
+public interface HospitalService {
+    void save(Map<String, Object> paramMap);
+
+    // 查询医院
+    Hospital getByHoscode(String hoscode);
+
+    //医院列表(条件查询分页)
+    Page<Hospital> selectHospPage(Integer page, Integer limit, HospitalQueryVo hospitalQueryVo);
+
+    //更新医院上线状态
+    void updateStatus(String id, Integer status);
+
+    //医院详情信息
+    Map<String, Object> getHospById(String id);
+
+    //获取医院名称
+    String getHospName(String hoscode);
+
+    //根据医院名称查询
+    List<Hospital> findByHosname(String hosname);
+
+    //根据医院编号获取医院预约挂号详情
+    Map<String, Object> item(String hoscode);
+}

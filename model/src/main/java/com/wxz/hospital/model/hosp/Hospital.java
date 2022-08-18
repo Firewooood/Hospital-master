@@ -17,7 +17,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
  */
 @Data
 @ApiModel(description = "Hospital")
-@Document("Hospital")
+@Document("Hospital")						// Mangodb 注解
 public class Hospital extends BaseMongoEntity {
 	
 	private static final long serialVersionUID = 1L;
