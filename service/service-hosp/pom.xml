@@ -22,17 +22,18 @@
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>wxz.hospital</groupId>-->
-<!--            <artifactId>service_cmn_client</artifactId>-->
-<!--            <version>1.0-SNAPSHOT</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>wxz.hospital</groupId>
+            <artifactId>service-cmn-client</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
         <dependency>
             <groupId>wxz.hospital</groupId>
             <artifactId>rabbit_util</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
 
     </dependencies>
 

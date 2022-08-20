@@ -46,4 +46,27 @@ public class DictController {
     public void exportData(HttpServletResponse response){
         dictService.exportDictData(response);
     }
+
+    // 根据dictcode和value查询
+    @GetMapping("getName/{dictCode}/{value}")
+    public String getName(@PathVariable String dictCode,
+                          @PathVariable String value) {
+        String dictName = dictService.getDictName(dictCode,value);
+        return dictName;
+    }
+
+    // 根据value查询
+    @GetMapping("getName/{value}")
+    public String getName(@PathVariable String value) {
+        String dictName = dictService.getDictName("",value);
+        return dictName;
+    }
+
+    //根据dictCode获取下级节点
+    @ApiOperation(value = "根据dictCode获取下级节点")
+    @GetMapping("findByDictCode/{dictCode}")
+    public Result findByDictCode(@PathVariable String dictCode) {
+        List<Dict> list = dictService.findByDictCode(dictCode);
+        return Result.ok(list);
+    }
 }
