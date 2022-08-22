@@ -10,8 +10,8 @@ import java.util.Map;
 @ApiModel(description = "短信实体")
 public class MsmVo {
 
-    @ApiModelProperty(value = "phone")
-    private String phone;
+    @ApiModelProperty(value = "email")
+    private String email;
 
     @ApiModelProperty(value = "短信模板code")
     private String templateCode;

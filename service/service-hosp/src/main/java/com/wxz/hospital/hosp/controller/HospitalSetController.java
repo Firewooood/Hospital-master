@@ -25,7 +25,7 @@ import java.util.Random;
  * @Date: Create in 2022/8/12
  */
 
-@CrossOrigin        // 跨域处理
+//@CrossOrigin        // 跨域处理
 @Api(tags = "医院设置管理")
 @RestController         // 相当于@Controller 和 @ResponseBody两个注解合并,
 @RequestMapping("/admin/hosp/hospitalSet")

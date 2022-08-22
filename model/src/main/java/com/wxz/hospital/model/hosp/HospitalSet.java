@@ -46,9 +46,9 @@ public class HospitalSet extends BaseEntity {
 	@TableField("contacts_name")
 	private String contactsName;
 
-	@ApiModelProperty(value = "联系人手机")
-	@TableField("contacts_phone")
-	private String contactsPhone;
+	@ApiModelProperty(value = "联系人邮箱")
+	@TableField("contacts_email")
+	private String contactsEmail;
 
 	@ApiModelProperty(value = "状态")
 	@TableField("status")

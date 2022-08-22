@@ -49,9 +49,9 @@ public class Patient extends BaseEntity {
 	@TableField("birthdate")
 	private Date birthdate;
 
-	@ApiModelProperty(value = "手机")
-	@TableField("phone")
-	private String phone;
+	@ApiModelProperty(value = "邮箱")
+	@TableField("email")
+	private String email;
 
 	@ApiModelProperty(value = "是否结婚")
 	@TableField("is_marry")
@@ -85,9 +85,9 @@ public class Patient extends BaseEntity {
 	@TableField("contacts_certificates_no")
 	private String contactsCertificatesNo;
 
-	@ApiModelProperty(value = "联系人手机")
-	@TableField("contacts_phone")
-	private String contactsPhone;
+	@ApiModelProperty(value = "联系人邮箱")
+	@TableField("contacts_email")
+	private String contactsemail;
 
 	@ApiModelProperty(value = "是否有医保")
 	@TableField("is_insure")
