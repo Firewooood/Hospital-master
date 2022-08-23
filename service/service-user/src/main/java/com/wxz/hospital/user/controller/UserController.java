@@ -1,16 +1,59 @@
 package com.wxz.hospital.user.controller;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.wxz.hospital.common.result.Result;
+import com.wxz.hospital.model.user.UserInfo;
+import com.wxz.hospital.user.service.UserInfoService;
+import com.wxz.hospital.vo.user.UserInfoQueryVo;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Map;
+
 /**
  * @Author: WuXiangZhong
- * @Description: 无注册界面，第一次登录根据邮箱号判断系统是否存在，如果不存在则自动注册。微信扫描登录成功必须绑定邮箱号码，即：第一次扫描成功后绑定邮箱号，以后登录扫描直接登录成功。
+ * @Description:  管理员前端接口
  * @Date: Create in 2022/8/22
  */
 @RestController
 @RequestMapping("admin/user")
 public class UserController {
+    @Autowired
+    private UserInfoService userInfoService;
 
 
+    //用户列表（条件查询带分页）
+    @GetMapping("{page}/{limit}")
+    public Result list(@PathVariable Long page,
+                       @PathVariable Long limit,
+                       UserInfoQueryVo userInfoQueryVo) {
+        Page<UserInfo> pageParam = new Page<>(page, limit); // Page分页从1开始
+        IPage<UserInfo> pageModel = userInfoService.selectPage(pageParam, userInfoQueryVo);
+        return Result.ok(pageModel);
+    }
+
+    //用户锁定状态改变
+    @GetMapping("lock/{userId}/{status}")
+    public Result lock(@PathVariable Long userId,@PathVariable Integer status) {
+        userInfoService.lock(userId,status);
+        return Result.ok();
+    }
+
+    //用户详情
+    @GetMapping("show/{userId}")
+    public Result show(@PathVariable Long userId) {
+        Map<String,Object> map = userInfoService.show(userId);
+        return Result.ok(map);
+    }
+
+    //认证审批状态改变
+    @GetMapping("approval/{userId}/{authStatus}")
+    public Result approval(@PathVariable Long userId,@PathVariable Integer authStatus) {
+        userInfoService.approval(userId,authStatus);
+        return Result.ok();
+    }
 }
