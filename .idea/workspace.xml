@@ -4,37 +4,208 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="893dab83-c6cf-481c-b720-3f922fed21e2" name="默认变更列表" comment="" />
+    <list default="true" id="893dab83-c6cf-481c-b720-3f922fed21e2" name="默认变更列表" comment="新增订单预约功能, 病人可根据排班信息下订单,并在邮箱收到通知">
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/wxz/hospital/order/controller/WeixinController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/wxz/hospital/order/mapper/PaymentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/wxz/hospital/order/mapper/RefundInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/wxz/hospital/order/mapper/xml/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/wxz/hospital/order/service/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/wxz/hospital/order/service/RefundInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/wxz/hospital/order/service/impl/PaymentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/wxz/hospital/order/service/impl/RefundInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/wxz/hospital/order/service/impl/WeixinServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-order/src/main/resources/apiclient_cert.p12" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-msm/src/main/java/com/wxz/hospital/msm/receiver/MsmReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-msm/src/main/java/com/wxz/hospital/msm/receiver/MsmReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-msm/src/main/java/com/wxz/hospital/msm/service/impl/MsmServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-msm/src/main/java/com/wxz/hospital/msm/service/impl/MsmServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/com/wxz/hospital/order/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/wxz/hospital/order/mapper/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/com/wxz/hospital/order/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/wxz/hospital/order/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/java/com/wxz/hospital/order/utils/ConstantPropertiesUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/java/com/wxz/hospital/order/utils/ConstantPropertiesUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-order/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-order/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="2DFLToDvYwUkVBR2PxgfWg7NIxj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/service-order/src/main/resources" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="模块" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.22064057" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\项目\尚硅谷-尚医通项目\MY\parent\service\service-order\src\main\resources" />
+      <recent name="D:\code\项目\尚硅谷-尚医通项目\MY\parent\common\rabbit_util\src\main\java\com\wxz\common\rabbit" />
+      <recent name="D:\code\项目\尚硅谷-尚医通项目\MY\parent\service\service-order\src\main\java\com\wxz\hospital\order\utils" />
+      <recent name="D:\code\项目\尚硅谷-尚医通项目\MY\parent\service-gateway\src\main\resources" />
+      <recent name="D:\code\项目\尚硅谷-尚医通项目\MY\parent\hospital-manage\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code\项目\尚硅谷-尚医通项目\MY\parent\service\service-order\src\main\java\com\wxz\hospital\order\mapper\xml" />
+      <recent name="D:\code\项目\尚硅谷-尚医通项目\MY\parent\service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wxz.hospital.msm.utils" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ServiceMsmApplication">
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wxz.hospital.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wxz.hospital.GatewayApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HospitalManageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="hospital-manage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wxz.hospitalmanage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wxz.hospitalmanage.HospitalManageApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceCmnApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service-cmn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wxz.hospital.cmn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wxz.hospital.cmn.ServiceCmnApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceHospApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service-hosp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wxz.hospital.hosp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wxz.hospital.hosp.ServiceHospApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceMsmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service-msm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wxz.hospital.msm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wxz.hospital.msm.ServiceMsmApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceOrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-order" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wxz.hospital.order.ServiceOrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wxz.hospital.user.ServiceUserApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ServiceUserApplication" />
+      <item itemvalue="Spring Boot.ServiceOrderApplication" />
+      <item itemvalue="Spring Boot.ServiceCmnApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.ServiceHospApplication" />
+      <item itemvalue="Spring Boot.HospitalManageApplication" />
+      <item itemvalue="Spring Boot.ServiceMsmApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ServiceMsmApplication" />
+        <item itemvalue="Spring Boot.HospitalManageApplication" />
+        <item itemvalue="Spring Boot.ServiceHospApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.ServiceCmnApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -44,11 +215,183 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660289897485</updated>
-      <workItem from="1660289899485" duration="957000" />
+      <workItem from="1660289899485" duration="11679000" />
+      <workItem from="1660359154648" duration="12148000" />
+      <workItem from="1660464321500" duration="23340000" />
+      <workItem from="1660611027615" duration="1794000" />
+      <workItem from="1660634417999" duration="1220000" />
+      <workItem from="1660704959815" duration="1564000" />
+      <workItem from="1660715754390" duration="33340000" />
+      <workItem from="1660807348668" duration="141000" />
+      <workItem from="1660873049252" duration="3967000" />
+      <workItem from="1660880198819" duration="18069000" />
+      <workItem from="1661150478080" duration="639000" />
+      <workItem from="1661152289104" duration="811000" />
+      <workItem from="1661153521900" duration="47293000" />
+      <workItem from="1661326529925" duration="5933000" />
+      <workItem from="1661341712121" duration="6114000" />
+      <workItem from="1661348291916" duration="37099000" />
+      <workItem from="1661512936152" duration="4056000" />
     </task>
+    <task id="LOCAL-00001" summary="HospitalSet部分增删改查,相关文件创建">
+      <created>1660313956833</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660313956833</updated>
+    </task>
+    <task id="LOCAL-00002" summary="搭建环境和医院设置">
+      <created>1660393195942</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660393195942</updated>
+    </task>
+    <task id="LOCAL-00003" summary="处理跨域请求,完善分页操作">
+      <created>1660468931361</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660468931362</updated>
+    </task>
+    <task id="LOCAL-00004" summary="基本完成service-cmn 数据字典模块">
+      <created>1660573348002</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660573348002</updated>
+    </task>
+    <task id="LOCAL-00005" summary="医院上传接口1">
+      <created>1660785883939</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660785883939</updated>
+    </task>
+    <task id="LOCAL-00006" summary="部门,排班接口上传">
+      <created>1660807475752</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660807475752</updated>
+    </task>
+    <task id="LOCAL-00007" summary="医院管理,排班管理模块">
+      <created>1660959055160</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660959055160</updated>
+    </task>
+    <task id="LOCAL-00008" summary="添加登录功能, 新增service-user 模块, 实现邮箱验证码登录功能">
+      <created>1661176476777</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661176476777</updated>
+    </task>
+    <task id="LOCAL-00009" summary="添加微信登录功能, 就诊人管理, 管理员端用户管理">
+      <created>1661262534629</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661262534629</updated>
+    </task>
+    <task id="LOCAL-00010" summary="新增订单预约功能, 病人可根据排班信息下订单,并在邮箱收到通知">
+      <created>1661482171776</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1661482171776</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="HospitalSet部分增删改查,相关文件创建" />
+    <MESSAGE value="搭建环境和医院设置" />
+    <MESSAGE value="处理跨域请求,完善分页操作" />
+    <MESSAGE value="基本完成service-cmn 数据字典模块" />
+    <MESSAGE value="医院上传接口1" />
+    <MESSAGE value="部门,排班接口上传" />
+    <MESSAGE value="医院管理,排班管理模块" />
+    <MESSAGE value="添加登录功能, 新增service-user 模块, 实现邮箱验证码登录功能" />
+    <MESSAGE value="添加微信登录功能, 就诊人管理, 管理员端用户管理" />
+    <MESSAGE value="新增订单预约功能, 病人可根据排班信息下订单,并在邮箱收到通知" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增订单预约功能, 病人可根据排班信息下订单,并在邮箱收到通知" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/hospital-manage/src/main/java/com/wxz/hospitalmanage/controller/HospitalController.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service/service-order/src/main/java/com/wxz/hospital/order/service/impl/OrderServiceImpl.java</url>
+          <line>243</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service/service-order/src/main/java/com/wxz/hospital/order/service/impl/OrderServiceImpl.java</url>
+          <line>239</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service/service-hosp/src/main/java/com/wxz/hospital/hosp/receiver/HospitalReceiver.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service/service-order/src/main/java/com/wxz/hospital/order/service/impl/WeixinServiceImpl.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service/service-order/src/main/java/com/wxz/hospital/order/service/impl/WeixinServiceImpl.java</url>
+          <line>168</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service/service-msm/src/main/java/com/wxz/hospital/msm/receiver/MsmReceiver.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service/service-order/src/main/java/com/wxz/hospital/order/service/impl/OrderServiceImpl.java</url>
+          <line>267</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service/service-order/src/main/java/com/wxz/hospital/order/service/impl/OrderServiceImpl.java</url>
+          <line>158</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/service/service-msm/src/main/java/com/wxz/hospital/msm/receiver/MsmReceiver.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
