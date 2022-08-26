@@ -4,6 +4,8 @@ import com.wxz.hospital.common.result.Result;
 import com.wxz.hospital.common.utils.AuthContextHolder;
 import com.wxz.hospital.model.user.Patient;
 import com.wxz.hospital.user.service.PatientService;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,7 +20,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/user/patient")
-public class PatientController {
+public class PatientApiController {
     @Autowired
     private PatientService patientService;
 
@@ -62,6 +64,16 @@ public class PatientController {
     public Result removePatient(@PathVariable Long id) {
         patientService.removeById(id);
         return Result.ok();
+    }
+
+
+    // 提供接口给其他微服务端使用
+    @ApiOperation(value = "获取就诊人")
+    @GetMapping("inner/get/{id}")
+    public Patient getPatientOrder(
+            @ApiParam(name = "id", value = "就诊人id", required = true)
+            @PathVariable("id") Long id) {
+        return patientService.getById(id);
     }
 
 }

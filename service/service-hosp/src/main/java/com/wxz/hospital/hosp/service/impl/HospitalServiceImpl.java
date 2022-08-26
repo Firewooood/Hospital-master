@@ -110,6 +110,10 @@ public class HospitalServiceImpl implements HospitalService {
 
     @Override
     public String getHospName(String hoscode) {
+        Hospital hospital = hospitalRepository.getHospitalByHoscode(hoscode);
+        if (null != hospital){
+            return hospital.getHosname();
+        }
         return null;
     }
 

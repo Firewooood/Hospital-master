@@ -1,6 +1,7 @@
 package com.wxz.hospital.hosp.service;
 
 import com.wxz.hospital.model.hosp.Schedule;
+import com.wxz.hospital.vo.hosp.ScheduleOrderVo;
 import com.wxz.hospital.vo.hosp.ScheduleQueryVo;
 import org.springframework.data.domain.Page;
 
@@ -24,4 +25,16 @@ public interface ScheduleService {
     Map<String, Object> getRuleSchedule(long page, long limit, String hoscode, String depcode);
 
     List<Schedule> getDetailSchedule(String hoscode, String depcode, String workDate);
+
+    Map<String, Object> getBookingScheduleRule(Integer page, Integer limit, String hoscode, String depcode);
+
+    ScheduleOrderVo getScheduleOrderVo(String scheduleId);
+
+    Schedule getScheduleId(String scheduleId);
+
+    /**
+     * 修改排班
+     */
+    void update(Schedule schedule);
+
 }
