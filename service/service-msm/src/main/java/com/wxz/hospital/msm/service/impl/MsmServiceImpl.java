@@ -1,5 +1,6 @@
 package com.wxz.hospital.msm.service.impl;
 
+import com.alibaba.fastjson.JSONObject;
 import com.wxz.hospital.msm.service.MsmService;
 import com.wxz.hospital.msm.utils.RandomUtil;
 import com.wxz.hospital.vo.msm.MsmVo;
@@ -16,7 +17,7 @@ import org.springframework.util.StringUtils;
 @Service
 public class MsmServiceImpl implements MsmService {
     @Override
-    public boolean sendEmail(String _email, String code) {
+    public boolean sendEmail(String _email, String msg) {
         // 判断邮箱号是否为空
         if(StringUtils.isEmpty(_email))return false;
 
@@ -31,8 +32,8 @@ public class MsmServiceImpl implements MsmService {
             // 发件人, 以及发件人对应的授权码
             email.setAuthentication("374004913@qq.com","ibfgvrjnlgdwbheh");
             // 发送主体
-            email.setSubject("邮箱验证码");
-            email.setMsg("请注意查收您的支付验证码"+ code);
+            email.setSubject("尚医通");
+            email.setMsg(msg);
             email.send();
             return true;
         }catch (Exception e){
@@ -49,8 +50,9 @@ public class MsmServiceImpl implements MsmService {
     @Override
     public boolean sendEmail(MsmVo msmVo) {
         if(!StringUtils.isEmpty(msmVo.getEmail())) {
-            String code = getCode();
-            return this.sendEmail(msmVo.getEmail(),code);
+            String msg = JSONObject.toJSONString(msmVo.getParam());
+
+            return this.sendEmail(msmVo.getEmail(),msg);
         }
         return false;
     }

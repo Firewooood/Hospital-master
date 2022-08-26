@@ -31,4 +31,13 @@ public class MsmReceiver {
     public void sendEmail(MsmVo msmVo, Message message, Channel channel) {
         msmService.sendEmail(msmVo);
     }
+
+    @RabbitListener(bindings = @QueueBinding(
+            value = @Queue(value = MqConst.QUEUE_ORDER, durable = "true"),
+            exchange = @Exchange(value = MqConst.EXCHANGE_DIRECT_ORDER),
+            key = {MqConst.ROUTING_ORDER}
+    ))
+    public void send1(MsmVo msmVo, Message message, Channel channel) {
+        msmService.sendEmail(msmVo);
+    }
 }
